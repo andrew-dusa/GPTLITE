@@ -8,7 +8,7 @@ GPTLite is a simplified, decoder-only implementation of the Transformer model th
 - **Self-Attention mechanisms:**
   - Self attention enables a model to weigh the value of different words from the input text differently based on their percieved relevance to the model.
 - **Multi-Headed Attention:**
-  - Multiheaded attention allows a model to focus on multiple different parts of an input sequence at the same time. This enhances the model's understanding of the text and improves generation. **
+  - Multiheaded attention allows a model to focus on multiple different parts of an input sequence at the same time. This enhances the model's understanding of the text and improves generation. 
 ## Sample Output ##
 ```
 Presently, he told him all at once, and find him on his seat.
