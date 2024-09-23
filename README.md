@@ -37,13 +37,13 @@ Self-Attention is a type of attention mechanism that relates different positions
 
 # Encoder/Decoder Models #
 This model is a decoder only model. The transformer was initially developed as an encoder-decoder model to improve the performance of machine translation tasks as demonstrated in the paper [Attention Is All You Need](https://arxiv.org/pdf/1706.03762). This consists of two stacks of layers, one is responsible for encoding the input sequence and the other is responsible for decoding it. This is important in machine translation because the input and output sequences differ.
-Decoder-only models, such as GPTLite only focus on generation tasks based on an input file. It relies on an attention mechanism that is unidirectional as opposed to bidirectional. Each tokem in the output sequence can attend to the previous tokens but not the future ones. This is suitable for tasks where the goal is to predict the next token in a sequence given the ones that came before it.
+Decoder-only models, such as GPTLite only focus on generation tasks based on an input file. It relies on an attention mechanism that is unidirectional as opposed to bidirectional. Each token in the output sequence can attend to the previous tokens but not the future ones. This is suitable for tasks where the goal is to predict the next token in a sequence given the ones that came before it.
 ## Below is an image of the stack used in "Attention Is All You Need", My implementation does not use the left stack as it is decoder only ##
 
   <img width="578" alt="Encoder-Decoder Stack" src="https://github.com/user-attachments/assets/e606d050-eee9-42a5-a07a-c09c9ea97819">
 
 # Use #
-Using my implementation is fairly simple. first make sure you have Numpy and Pytorch installed and you have a text file that contains the information you want to train on.
-You can tweak the hyperparameters as you wish but me wary of using too much VRAM on your CPU. Also make sure to change the file_path variable to the name of your file that you want to train on. I trained GPTLITE on an RTX 4080 and it took around 1 hour. My Implementation uses 85 million parameters.
+Using my implementation is fairly simple. first make sure you have NumPy and PyTorch installed and you have a text file that contains the information you want to train on.
+You can tweak the hyperparameters as you wish but be wary of using too much VRAM on your CPU. Also make sure to change the file_path variable to the name of your file that you want to train on. I trained GPTLITE on an RTX 4080 and it took around 1 hour. My Implementation uses 85 million parameters.
 ## Credits ##
 This project is based on Andrej Karpathy's YouTube series "Neural Networks: Zero to Hero" (https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
