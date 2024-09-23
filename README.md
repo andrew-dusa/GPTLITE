@@ -24,7 +24,7 @@ spokilful with she giving hims abound his son.
 This was trained on a [The Odyssey](https://www.loc.gov/item/10000284/) from the Library of Congress using 85 million parameters.
 
 # What is Self-Attention? #
-Self-Attention is a type of attention mechanism that relates different positions of an input sequence in order to compute a representaion of the sequence. It allows each position in the sequence to 'attend' to all of the other positions in the sequence. This is different from LSTM models because in self-attention the mechanism is used within the same sequence instead of being applied between encoder and decoder layers.
+Self-Attention is a type of attention mechanism that relates different positions of an input sequence in order to compute a representation of the sequence. It allows each position in the sequence to 'attend' to all of the other positions in the sequence. This is different from LSTM models because in self-attention the mechanism is used within the same sequence instead of being applied between encoder and decoder layers.
 
 # What is Multi-Head Attention #
 "Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions" (Vaswani et al., 2017, p. 5). What this means is that each head will independently compute a set of attention scores that allows the model to learn different aspects of the input data. We then concatenate the outputs from the heads and transform them into our expected format.
